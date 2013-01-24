@@ -22,6 +22,8 @@ end
 gem 'jquery-rails'
 gem 'thin'
 
+gem 'ember-rails', git: 'git://github.com/emberjs/ember-rails.git'
+
 group :test, :development do
   gem 'konacha'
   gem 'capybara-webkit'
