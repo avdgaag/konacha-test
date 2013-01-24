@@ -20,6 +20,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'thin'
 
 group :test, :development do
   gem 'konacha'
