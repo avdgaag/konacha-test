@@ -4,6 +4,7 @@ env:
     - DISPLAY=":99.0"
 before_script:
  - "sh -e /etc/init.d/xvfb start"
+ - "rails runner 'puts Rails.application.assets.each_file.to_a'"
 rvm:
   - 1.9.3
 script: "bundle exec rake konacha:run"
